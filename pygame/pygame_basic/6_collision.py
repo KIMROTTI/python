@@ -89,6 +89,7 @@ while running:
     enemy_rect.left = enemy_x_pos
     enemy_rect.top = enemy_y_pos
 
+    print(enemy_rect)
     # 충돌 체크
     if character_rect.colliderect(enemy_rect):
         print("충돌했어요")

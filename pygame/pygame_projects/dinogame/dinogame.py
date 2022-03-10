@@ -6,7 +6,7 @@ pygame.init()
 pygame.display.set_caption('Jumping dino')
 MAX_WIDTH = 800
 MAX_HEIGH = 400
-# 메인함수
+
 def main():
     screen = pygame.display.set_mode((MAX_WIDTH,MAX_HEIGH))
     fps = pygame.time.Clock()
@@ -72,7 +72,7 @@ def main():
 
 
         # 충돌 체크
-        if pygame.sprite.collide_circle(dino_rect,tree_rect):
+        if dino_rect.collidedict(tree_rect):
             print("충돌했습니다")
             running = False
 
