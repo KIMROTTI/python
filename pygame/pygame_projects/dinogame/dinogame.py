@@ -71,10 +71,7 @@ def main():
         tree_rect.right = tree_y
 
 
-        # 충돌 체크
-        if dino_rect.collidedict(tree_rect):
-            print("충돌했습니다")
-            running = False
+        
 
         # 화면 출력
         screen.blit(imgTree,(tree_x, tree_y))
